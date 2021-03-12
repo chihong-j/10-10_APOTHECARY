@@ -110,4 +110,4 @@
 + 啟發式演算法與最佳解相差 0.35%
 
 
-![image](resources/19.png)
+![image](resources/19.jpg)
