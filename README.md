@@ -6,6 +6,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 ## 公司簡介
 客林國際股份有限公司主要經營化妝品、保養品與香氛商品的進口業務，旗下商品種類多樣，於許多知名百貨公司皆有設櫃。
 <br>
+<br>
 
 ## 問題描述
 + 結合需求預測模組，打造訂貨決策模組
@@ -22,6 +23,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 + 決策變數
 決定每期要分別使用快遞／空運／海運訂多少貨。
 <br>
+
 ## 公司現行訂貨相關資訊
 + 每個月月初訂貨，未來1~6期每期皆可訂貨
 + 每次訂貨時會考慮未來6個月的需求，不考慮需求的隨機性。
@@ -32,6 +34,8 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 + 訂貨時部分商品有by package的批量限制。
 + 可訂貨數量的最大值為：第1期期初存貨不能滿足未來六個月所有需求的部分。
 <br>
+
+
 ## 數學模型
 
 ### 架構
@@ -72,11 +76,11 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 <img src="https://render.githubusercontent.com/render/math?math=(x_{t-L_f,i,f}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=Q_{ti} - D_{ti})">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
 + 設定<img src="https://render.githubusercontent.com/render/math?math=y_{0,i}">和<img src="https://render.githubusercontent.com/render/math?math=z_{0,i}">的初始值：
 <br>
-<img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {I_i^0, 0}">
+<img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {(I_i^0, 0)}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
 
 $$y_{0,i} = {\rm max}\{ I_i^0,\ 0\} \qquad \forall i \in I$$
 
-$$z_{0,i} = {\rm max} \{ -I_i^0,\ 0\}
+$$z_{0,i} = {\rm max} \{ (-I_i^0,\ 0\)}
 \qquad \forall i \in I$$
 
 $$y_{ti} \geq 0 \qquad 
