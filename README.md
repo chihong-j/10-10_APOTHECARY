@@ -95,7 +95,7 @@
 ![image](resources/18.jpg)
 <br>
 
-## Heuristic Algorithm實作
+## Heuristic Algorithm實作（啟發式演算法）
 > 每期需求都要被滿足（第一期除外）<br>
 > 每期只選擇一種到貨運輸方式
 <br>
@@ -106,4 +106,8 @@
 
 
 ## 成果：
++ 常見的方法與最佳解相差 8.3%
++ 啟發式演算法與最佳解相差 0.35%
+
+
 ![image](resources/19.png)
