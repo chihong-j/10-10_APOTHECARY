@@ -37,7 +37,10 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 ### 架構
 ![image](resources/5.jpg)
 ### Sets & Indices
-![](http://latex.codecogs.com/gif.latex?\T)是所有期數的集合
+T是所有期數的集合
+I是所有商品的集合
+F是所有運輸方式的集合
+![](http://latex.codecogs.com/gif.latex?t\in T) 代表整個訂貨計畫中的第 t 期；![](http://latex.codecogs.com/gif.latex?T = \{1,...,6\})
 ### Decision Variables
 
 ### Parameters
@@ -47,4 +50,4 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 ### Constraints 
 初始化期初存貨
 ![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
-
+![](http://latex.codecogs.com/gif.latex?)
