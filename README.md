@@ -1,4 +1,4 @@
-# 10-10_APOTHECARY
+# Optimization-of-Apothecary
 
 最佳化訂貨策略實作
 + 使用Gurobi取得最佳解
