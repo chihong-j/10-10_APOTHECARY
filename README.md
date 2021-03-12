@@ -72,9 +72,10 @@
 ### Constraints 
 + 期末存貨平衡式：
   + <img src="https://render.githubusercontent.com/render/math?math=y_{ti} - z_{ti} = y_{t-1,i}-\beta z_{t-1,i}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{f \in F ,\ L_f \lt t}">
-<img src="https://render.githubusercontent.com/render/math?math=(x_{t-L_f,i,f}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=Q_{ti} - D_{ti})">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
+<img src="https://render.githubusercontent.com/render/math?math=(x_{t-L_f,i,f}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=Q_{ti} - D_{ti})">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
 + 設定<img src="https://render.githubusercontent.com/render/math?math=y_{0,i}">和<img src="https://render.githubusercontent.com/render/math?math=z_{0,i}">的初始值：
-  + <img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {(I_i^0, 0)}">&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
+  + <img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {(I_i^0, 0)}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
+  + <img src="https://render.githubusercontent.com/render/math?math=z_{0,i} = {\rm max} {(-I_i^0, 0)}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
 
 $$y_{0,i} = {\rm max}\{ I_i^0,\ 0\} \qquad \forall i \in I$$
 
