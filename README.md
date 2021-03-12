@@ -5,7 +5,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 
 ## 公司簡介
 客林國際股份有限公司主要經營化妝品、保養品與香氛商品的進口業務，旗下商品種類多樣，於許多知名百貨公司皆有設櫃。
-
+<br>
 
 ## 問題描述
 + 結合需求預測模組，打造訂貨決策模組
@@ -13,7 +13,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 
 + 建立自動化系統最小化公司訂貨成本
 由於目前公司的訂貨與存貨控制方式較仰賴於決策者的經驗，若能建立自動化的系統針對訂貨、存貨策略提供建議，便能夠讓決策者在決策時有更明確的資訊來做衡量及判斷。本專案將透過建立模型，協助公司在給定的訂購時點找出最佳訂購量，在缺貨成本與存貨成本之間取得最佳平衡，並維持公司的穩定運作。
-
+<br>
 
 ## 決策目標
 + 目標函數
@@ -21,7 +21,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 
 + 決策變數
 決定每期要分別使用快遞／空運／海運訂多少貨。
-
+<br>
 ## 公司現行訂貨相關資訊
 + 每個月月初訂貨，未來1~6期每期皆可訂貨
 + 每次訂貨時會考慮未來6個月的需求，不考慮需求的隨機性。
@@ -31,7 +31,7 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 + 每月底若存貨＞0，會有存貨成本；反之若存貨＜0，則會有分別有 lost sales成本和backorder成本 。
 + 訂貨時部分商品有by package的批量限制。
 + 可訂貨數量的最大值為：第1期期初存貨不能滿足未來六個月所有需求的部分。
-
+<br>
 ## 數學模型
 
 ### 架構
@@ -67,8 +67,24 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 
 
 ### Constraints 
-期末存貨平衡式：
++ 期末存貨平衡式：
 <img src="https://render.githubusercontent.com/render/math?math=y_{ti} - z_{ti} = y_{t-1,i}-\beta z_{t-1,i}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{f \in F ,\ L_f \lt t}">
 <img src="https://render.githubusercontent.com/render/math?math=(x_{t-L_f,i,f}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=Q_{ti} - D_{ti})">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
++ 設定<img src="https://render.githubusercontent.com/render/math?math=y_{0,i}">和<img src="https://render.githubusercontent.com/render/math?math=z_{0,i}">的初始值：
+<br>
+<img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {I_i^0, 0}">
 
+$$y_{0,i} = {\rm max}\{ I_i^0,\ 0\} \qquad \forall i \in I$$
+
+$$z_{0,i} = {\rm max} \{ -I_i^0,\ 0\}
+\qquad \forall i \in I$$
+
+$$y_{ti} \geq 0 \qquad 
+\forall t \in T, \ 
+\forall i \in I$$
+
+$$z_{ti} \geq 0 \qquad 
+\forall t \in T, \ 
+\forall i \in I$$
+<br>
 <img src="https://render.githubusercontent.com/render/math?math=">
