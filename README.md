@@ -76,18 +76,9 @@
 + 設定<img src="https://render.githubusercontent.com/render/math?math=y_{0,i}">和<img src="https://render.githubusercontent.com/render/math?math=z_{0,i}">的初始值：
   + <img src="https://render.githubusercontent.com/render/math?math=y_{0,i} = {\rm max} {(I_i^0, 0)}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
   + <img src="https://render.githubusercontent.com/render/math?math=z_{0,i} = {\rm max} {(-I_i^0, 0)}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall i \in I">
+  + <img src="https://render.githubusercontent.com/render/math?math=y_{ti} \ge 0">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
+  + <img src="https://render.githubusercontent.com/render/math?math=z_{ti} \ge 0">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I">
 
-$$y_{0,i} = {\rm max}\{ I_i^0,\ 0\} \qquad \forall i \in I$$
 
-$$z_{0,i} = {\rm max} \{ (-I_i^0,\ 0\)}
-\qquad \forall i \in I$$
-
-$$y_{ti} \geq 0 \qquad 
-\forall t \in T, \ 
-\forall i \in I$$
-
-$$z_{ti} \geq 0 \qquad 
-\forall t \in T, \ 
-\forall i \in I$$
 <br>
 <img src="https://render.githubusercontent.com/render/math?math=">
