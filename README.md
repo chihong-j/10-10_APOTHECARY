@@ -61,10 +61,9 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 + <img src="https://render.githubusercontent.com/render/math?math=K_f">：利用運輸方式 f 的固定成本
 + <img src="https://render.githubusercontent.com/render/math?math=L_t">：運輸方式 f 的lead time（單位：月）
 + <img src="https://render.githubusercontent.com/render/math?math=R_{if}">：商品 i 是否存在運輸方式 f 的二元參數。若有，則<img src="https://render.githubusercontent.com/render/math?math=R_{if} = 1">；若無，則<img src="https://render.githubusercontent.com/render/math?math=R_{if} = 0">
-
-$\beta_i$：商品 i 的 backorder 比例
++ <img src="https://render.githubusercontent.com/render/math?math=beta_i">：商品 i 的 backorder 比例
 ### Objective function
-
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= min" style="border:none;">
 ### Constraints 
 初始化期初存貨
 ![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
