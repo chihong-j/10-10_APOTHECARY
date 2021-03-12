@@ -50,4 +50,4 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 ![image](resources/12.png)
 ![image](resources/13.png)
 ![image](resources/14.png)
-
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
