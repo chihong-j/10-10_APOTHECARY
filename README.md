@@ -87,6 +87,7 @@
   + <img src="https://render.githubusercontent.com/render/math?math=x_{tif} \in \mathbb{Z}">+&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall i \in I ,\ \forall f \in F">
 + <img src="https://render.githubusercontent.com/render/math?math=w_{tf}">是二元變數：
   + <img src="https://render.githubusercontent.com/render/math?math=w_{tf} \in \{0, 1\}">&nbsp;&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\forall t \in T ,\ \forall f \in F">
-
 <br>
-<img src="https://render.githubusercontent.com/render/math?math=">
+## 電腦模型：架構與結果
+![image](resources/18.png)
+
