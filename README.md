@@ -63,13 +63,11 @@ Optomaztion of procurement strategy for 10/10 Apothecary
 + <img src="https://render.githubusercontent.com/render/math?math=R_{if}">：商品 i 是否存在運輸方式 f 的二元參數。若有，則<img src="https://render.githubusercontent.com/render/math?math=R_{if} = 1">；若無，則<img src="https://render.githubusercontent.com/render/math?math=R_{if} = 0">
 + <img src="https://render.githubusercontent.com/render/math?math=\beta_i">：商品 i 的 backorder 比例
 ### Objective function
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= min" style="border:none;">&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t\in T}\sum_{i\in I}\sum_{f\in F} (M_i + G_{if}) x_{tif} ">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t\in T}\sum_{f\in F}  K_{f} w_{tf}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t \in T}\sum_{i\in I} (\underbrace{C_{i}^o y_{ti}}_{Inventory cost}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\beta_i C_{i}^b z_{ti}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=(1 - \beta_i)C_{i}^l z_{ti})">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= min" style="border:none;">&nbsp;&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t\in T}\sum_{i\in I}\sum_{f\in F} (M_i + G_{if}) x_{tif} ">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t\in T}\sum_{f\in F}  K_{f} w_{tf}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{t \in T}\sum_{i\in I} C_{i}^o y_{ti}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\beta_i C_{i}^b z_{ti}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=(1 - \beta_i)C_{i}^l z_{ti})">
 
 
 ### Constraints 
-初始化期初存貨
-![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+期末存貨平衡式：
+<img src="https://render.githubusercontent.com/render/math?math=y_{ti} - z_{ti} = y_{t-1,i}-\beta z_{t-1,i}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=\sum_{f \in F \ \& \ L_f \lt t} x_{t-L_f,i,f}">&nbsp;+&nbsp;<img src="https://render.githubusercontent.com/render/math?math=Q_{ti} - D_{ti} \forall t \in T ,\ \forall i \in I">
 
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<img src="https://render.githubusercontent.com/render/math?math=">
