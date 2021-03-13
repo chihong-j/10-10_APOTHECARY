@@ -1,10 +1,11 @@
-# Optimization-of-Apothecary
+# OR-for-ProcurementStrategy
 
 最佳化訂貨策略實作
 + 使用Gurobi取得最佳解
 + 設計Heuristic演算法逼近最佳解
 
 ## 公司簡介
+10/10 Apothecary<br>
 客林國際股份有限公司主要經營化妝品、保養品與香氛商品的進口業務，旗下商品種類多樣，於許多知名百貨公司皆有設櫃。
 <br>
 <br>
